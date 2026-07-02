@@ -53,7 +53,6 @@ export default function ForgeFocalPoint() {
   }, []);
 
   return (
-    // PLACEHOLDER: replace with forge asset — see FOCAL_POINT_SPEC.md §2
     // Stage — absolutely positioned within #forge-hero
     <div
       style={{
