@@ -15,7 +15,7 @@ export async function GET(request: NextRequest) {
   const slug = process.env.CAL_EVENT_TYPE_SLUG;
 
   if (!username || !slug) {
-    return Response.json({ error: "Booking not configured" }, { status: 503 });
+    return Response.json({ data: { slots: {} } });
   }
 
   const url = new URL("https://api.cal.com/v2/slots/available");

@@ -275,6 +275,19 @@ export default function BookingFlow() {
               />
             ))}
           </div>
+        ) : Object.keys(slots).length === 0 ? (
+          <div className="pt-4 pb-2">
+            <p className="text-foundry-stone text-sm leading-relaxed">
+              Live calendar coming soon. In the meantime,{" "}
+              <a
+                href="mailto:hello@foundry.co.za"
+                className="text-foundry-ink underline underline-offset-4 decoration-foundry-mist hover:decoration-foundry-ink transition-colors duration-200"
+              >
+                email hello@foundry.co.za
+              </a>{" "}
+              to book a call and we&rsquo;ll get back to you within a few hours.
+            </p>
+          </div>
         ) : (
           <div className="grid grid-cols-7 gap-1">
             {cells.map((day, i) => {
