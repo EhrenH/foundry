@@ -12,11 +12,14 @@
 2. **Web** — custom websites for small-to-medium service businesses, primarily in South Africa.
 3. **Referral** — a customer referral platform that lives inside client websites.
 
-**Brand essence:** *We build things that work.*
+**Brand essence:** *We build things that grow.*
 
-**Primary tagline:** *We help founders and agencies ship the right thing, faster.*
+**Primary tagline:** *The difference between a business that exists and one that grows.*
+
+> **⚠️ POSITIONING UPDATE (supersedes older framing below):** Foundry is no longer positioned as "a fractional consultant you book a session with." Foundry is positioned as **the key to a business's growth** — more credibility, more acquisition, more conversion. The product sold is *growth itself*, with Foundry's services (consulting, web, referral) as the *mechanisms* that deliver it. All homepage and service copy must lead with the client's **outcome** (what they become / gain), not with Foundry's **job title** (what Ehren does). See the new **Section 1.5 — Positioning & Copy Direction** immediately below for the authoritative copy guidance. Where older copy in this brief (Sections 5.x) conflicts with Section 1.5, **Section 1.5 wins.**
 
 **Strategic logic:**
+- The three services are *mechanisms of growth*, not separate product lines. Consulting sharpens what a business builds; Web gives it a presence that converts; Referral turns its customers into a growth engine. All three ladder up to one promise: growth.
 - Consulting is the highest-margin, fastest-to-revenue offering and the credibility anchor.
 - Web is the project-based middle layer that generates portfolio and case studies.
 - Referral is the recurring-revenue SaaS-style offering with the longest-term defensibility.
@@ -27,6 +30,105 @@
 **Build constraint:** Solo founder, no developers on payroll. All builds done by Ehren with AI coding assistance (Claude Code / Cursor). Lean stack. Free tiers wherever possible. Total monthly infrastructure cost target: under R200.
 
 **First milestone:** Foundry's marketing site + booking system live within 2 weeks. Full referral mechanism (used by Foundry itself as live demo) live within 4 weeks.
+
+---
+
+## 1.5 Positioning & copy direction (AUTHORITATIVE — supersedes copy in Section 5)
+
+> This section is the source of truth for *what the site says and how it's framed*. Section 5 still governs page *structure* (which sections exist, in what order), but where Section 5's example copy conflicts with the positioning or copy here, **this section wins.** Claude Code: when building or revising page copy, follow this section.
+
+### The positioning shift
+
+**Old framing (deprecated):** "Foundry is a fractional Product Owner / web developer / consultant. Book a session."
+
+**New framing (authoritative):** "Foundry is the key to your business's growth. More credibility. More customers. More conversion."
+
+Foundry does not sell a session, a job title, or hours. It sells **growth** — and the three services are the *mechanisms* through which that growth is delivered. Ehren is not "a consultant"; Ehren is the force that turns a business that merely exists into one that grows.
+
+### The copy rules that follow from this
+
+1. **Lead with their outcome, not Foundry's role.** Every headline and opening line names what the *client* gains or becomes — not what Ehren does for a living. "Grow faster than you could alone" not "Fractional Product Owner for hire."
+2. **"You/your" outnumbers "I/we."** The copy is about the client's business and its growth, with Foundry as the mechanism. The reader should see *themselves and their growth* in the copy, with Foundry as how they get there.
+3. **Name the three growth levers concretely:** more **credibility**, more **acquisition**, more **conversion**. These are the tangible outcomes. Use them.
+4. **The services appear as *how*, not *what*.** Consulting, Web, and Referral are introduced as the means to the growth, framed by the outcome they produce — not as a menu of job descriptions.
+5. **Keep the Apple-modern voice** (Section 2.1) — calm, declarative, short sentences, no clichés, no exclamation marks, no emojis. The *positioning* changed; the *voice* did not. Note: the word "transform" was on the old banned list but is acceptable sparingly given the growth/forge theme — still avoid "transform ative" as a cliché.
+6. **The forge focal point carries the metaphor visually** (see `FOCAL_POINT_SPEC.md`): raw business refined into something valuable through heat and craft. Copy and visual tell the same story — growth as transformation.
+
+### Rewritten copy — Home page
+
+**Hero:**
+> Headline: **We build things that grow.**
+> Sub: *More credibility. More customers. More conversion. Foundry is the difference between a business that exists and one that grows.*
+> Primary CTA: `Book a call →`  Secondary CTA: `See our work`
+
+(Alternative headline options, same spirit — pick the strongest in build: *"Your business, but growing."* / *"Built to grow."* / *"The key to your growth."*)
+
+**Three-lever section (replaces the old "three service cards" framing — same three cards, reframed as outcomes):**
+> Section intro: **Three ways we grow your business.**
+>
+> - **Credibility.** A presence so considered that customers trust you before they speak to you. *(→ Web)*
+> - **Acquisition.** Your existing customers, turned into a steady source of new ones. *(→ Referral)*
+> - **Conversion.** The right thing built the right way, so more of your visitors become customers. *(→ Consulting / product work)*
+>
+> Each card links to the relevant service page, but the card *leads with the outcome*, not the service name.
+
+**The pitch section (reframed):**
+> Headline: **Growth isn't luck. It's built.**
+> Body: Most businesses grow by accident — a good month, a lucky referral, a busy season. Foundry makes growth deliberate. We find what's holding your business back, build what moves it forward, and turn your own customers into the engine that brings you more. One person, accountable for the outcome, start to finish.
+
+**Selected work:** (structure unchanged from 5.1) — but each case study leads with the *growth result* (e.g. "8 new students in 60 days") as the headline of the card, not the deliverable.
+
+**Quiet credibility (reframed):**
+> **Eight years building products that ship. Now building growth for businesses like yours.**
+> Foundry is the work of someone who spent eight years inside a software agency turning vague ideas into shipped products for international clients. That same discipline — find the real problem, build the right thing, make it work — is now pointed at one outcome: growing your business.
+
+**Final CTA:**
+> Headline: **Let's grow your business.**
+> CTA: `Book a call →`
+
+### Rewritten copy — Consulting page (reframed as a growth lever)
+
+Keep the structure from Section 5.2, but reframe the hero and intro around outcome:
+
+**Hero:**
+> Headline: **Build the right thing. Grow faster.**
+> Sub: *Most businesses waste months building the wrong things. I make sure yours builds what actually moves it forward.*
+
+The founder/agency split (Section 5.2) stays — it's still the clearest way to speak to two buyers — but each side leads with *their* outcome:
+- **For founders:** *Turn a chaotic backlog into a roadmap that ships — and a product that grows.*
+- **For agencies:** *Drop-in product capacity that makes your team ship the right thing the first time.*
+
+The 8-years background stays as *credibility evidence*, positioned after the outcome, not as the lead.
+
+### Rewritten copy — Web page (reframed as the credibility lever)
+
+**Hero:**
+> Headline: **A presence that earns trust.**
+> Sub: *A website so considered that customers believe in you before they've spoken to you. Built to convert visitors into customers.*
+
+Rest of structure unchanged (Section 5.3); reframe "what's included" as *what it does for you* where natural.
+
+### Rewritten copy — Referral page (reframed as the acquisition lever)
+
+**Hero:**
+> Headline: **Your customers, bringing you more.**
+> Sub: *The people who already trust you are your best source of new business. We build the system that turns them into a steady stream of referrals — automatically.*
+
+Rest of structure unchanged (Section 5.4).
+
+### Rewritten copy — About page
+
+Keep structure from Section 5.6, but the story leads with the *why* behind the growth promise:
+> **Foundry exists because most businesses grow by accident.**
+> After eight years inside a software agency — as a BA, PM, and Product Owner shipping apps and websites for international clients — I kept seeing the same thing: the businesses that grew weren't lucky, they were deliberate. They built the right things. They earned trust. They turned customers into advocates. Foundry is how I bring that same deliberateness to your business. One person, accountable for your growth, start to finish.
+
+### What this changes for the build
+
+- Homepage hero, three-lever section, pitch, credibility, and final CTA copy → replace per above.
+- Service page heroes → replace per above; reframe supporting copy toward outcomes.
+- About page story → replace per above.
+- Navigation, page structure, components → **unchanged.** This is a copy/positioning revision, not a structural one.
+- The forge focal point (`FOCAL_POINT_SPEC.md`) is the visual expression of this positioning — build them to reinforce each other.
 
 ---
 
@@ -823,7 +925,7 @@ When working in this codebase:
 - **TypeScript strict mode.** No `any` unless commented with reason.
 - **No premature abstraction.** Inline first, extract to component only when used 2+ times.
 - **Apple-modern discipline at every step.** If a design decision would add visual noise, cut it.
-- **Match the voice in copy.** No exclamation marks, no emojis (except in n8n notifications which are internal), no banned words from section 2.1.
+- **Match the voice in copy.** No exclamation marks, no emojis (except in n8n notifications which are internal), no banned words from section 2.1. Exception: "transform" is acceptable sparingly given the growth/forge theme. **For all page copy, follow Section 1.5 (Positioning & Copy Direction) — it is authoritative and supersedes example copy in Section 5.**
 - **Test the full flow before declaring a phase done.** A referral flow that "should work" but hasn't been run end-to-end isn't done.
 - **Commit often.** Every meaningful chunk of work → commit → push. Vercel auto-deploys on push to `main`.
 
@@ -831,16 +933,18 @@ When working in this codebase:
 
 ## 12. Quick reference
 
-**Brand essence:** We build things that work.
-**Tagline:** We help founders and agencies ship the right thing, faster.
-**Three services:** Consulting · Web · Referral.
-**Visual language:** Apple-modern, Geist typography, Workshop Ochre accent (#B8860B), generous whitespace, type-led.
-**Voice:** Calm, confident, declarative. No emojis. No clichés.
+**Brand essence:** We build things that grow.
+**Tagline:** The difference between a business that exists and one that grows.
+**Positioning:** Foundry sells *growth* (more credibility, acquisition, conversion) — not a job title or a session. Copy leads with the client's outcome. See **Section 1.5** (authoritative for copy).
+**Three services (framed as growth levers):** Web → credibility · Referral → acquisition · Consulting → conversion.
+**Visual language:** Apple-modern, Geist typography, Workshop Ochre accent (#B8860B), generous whitespace, type-led. Homepage centerpiece = the **forge focal point** (see `FOCAL_POINT_SPEC.md`).
+**Voice:** Calm, confident, declarative. No emojis. No clichés. ("Transform" acceptable sparingly given the growth/forge theme.)
 **Stack:** Next.js 15 + Tailwind v4 + TypeScript + Supabase + Vercel + Cal.com + n8n + Resend + Telegram.
 **Domain target:** foundry.co.za.
 **Phase A goal:** Coming-soon page live this week.
 **Phase B goal:** Consulting + booking live within 7 days after Phase A.
 **Total v1 monthly infra cost target:** under R200.
+**Companion docs:** `FOCAL_POINT_SPEC.md` (homepage centerpiece + motion), `AI_VISIBILITY_FOUNDATION.md` (GEO/AI search setup), `OPERATING_RHYTHM.md` (ops cadence).
 
 ---
 

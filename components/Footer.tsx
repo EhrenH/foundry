@@ -10,7 +10,7 @@ export default function Footer() {
             foundry
           </span>
           <p className="text-foundry-stone text-sm">
-            Built in Cape Town. Made for businesses everywhere.
+            For ambitious businesses, everywhere.
           </p>
         </div>
 
@@ -22,17 +22,20 @@ export default function Footer() {
             {CONTACT_EMAIL}
           </a>
           <div className="flex gap-6">
-            <Link href="/consulting" className="text-foundry-stone text-sm hover:text-foundry-ink transition-colors duration-300">
-              Consulting
+            <Link href="/services" className="text-foundry-stone text-sm hover:text-foundry-ink transition-colors duration-300">
+              Expertise
             </Link>
-            <Link href="/web" className="text-foundry-stone text-sm hover:text-foundry-ink transition-colors duration-300">
-              Web
+            <Link href="/blog" className="text-foundry-stone text-sm hover:text-foundry-ink transition-colors duration-300">
+              Insights
             </Link>
-            <Link href="/referral" className="text-foundry-stone text-sm hover:text-foundry-ink transition-colors duration-300">
-              Referral
+            <Link href="/about" className="text-foundry-stone text-sm hover:text-foundry-ink transition-colors duration-300">
+              About
             </Link>
             <Link href="/book" className="text-foundry-stone text-sm hover:text-foundry-ink transition-colors duration-300">
               Book
+            </Link>
+            <Link href="/refer" className="text-foundry-stone text-sm hover:text-foundry-ink transition-colors duration-300">
+              Refer & earn
             </Link>
           </div>
         </div>

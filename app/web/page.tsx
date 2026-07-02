@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import PrismHero from "@/components/PrismHero";
 
 export const metadata: Metadata = {
   title: "Web — Foundry",
@@ -18,21 +19,7 @@ const included = [
 export default function WebPage() {
   return (
     <main>
-      <section className="px-8 md:px-16 py-[5rem] md:py-[7.5rem] bg-foundry-white">
-        <div className="max-w-[1200px] mx-auto">
-          <ScrollReveal>
-            <h1 className="text-[3rem] md:text-[4rem] lg:text-[5rem] font-medium tracking-[-0.025em] text-foundry-ink leading-[1.05] max-w-[800px] mb-8">
-              Websites that bring you customers.
-            </h1>
-          </ScrollReveal>
-          <ScrollReveal delay={100}>
-            <p className="text-foundry-stone text-xl leading-relaxed max-w-[600px]">
-              Custom-built websites for service businesses. Designed to convert
-              visitors into customers.
-            </p>
-          </ScrollReveal>
-        </div>
-      </section>
+      <PrismHero />
 
       <section className="px-8 md:px-16 py-[5rem] md:py-[7.5rem] bg-foundry-cream">
         <div className="max-w-[720px] mx-auto">

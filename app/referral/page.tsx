@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import AurumMonolithHero from "@/components/AurumMonolithHero";
 
 export const metadata: Metadata = {
   title: "Referral — Foundry",
@@ -34,21 +35,7 @@ const steps = [
 export default function ReferralPage() {
   return (
     <main>
-      <section className="px-8 md:px-16 py-[5rem] md:py-[7.5rem] bg-foundry-white">
-        <div className="max-w-[1200px] mx-auto">
-          <ScrollReveal>
-            <h1 className="text-[3rem] md:text-[4rem] lg:text-[5rem] font-medium tracking-[-0.025em] text-foundry-ink leading-[1.05] max-w-[800px] mb-8">
-              A referral system inside your website.
-            </h1>
-          </ScrollReveal>
-          <ScrollReveal delay={100}>
-            <p className="text-foundry-stone text-xl leading-relaxed max-w-[600px]">
-              Your existing customers refer new ones, automatically. You handle
-              the rewards. We handle everything else.
-            </p>
-          </ScrollReveal>
-        </div>
-      </section>
+      <AurumMonolithHero />
 
       <section className="px-8 md:px-16 py-[5rem] md:py-[7.5rem] bg-foundry-cream">
         <div className="max-w-[720px] mx-auto">

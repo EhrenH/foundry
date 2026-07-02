@@ -6,85 +6,137 @@ export default function ForgeHero() {
   return (
     <section
       id="forge-hero"
-      className="relative overflow-hidden bg-[#0D0D0D]"
-      style={{ height: "100dvh", minHeight: "620px" }}
+      style={{
+        position: "relative",
+        width: "100%",
+        height: "100dvh",
+        minHeight: "680px",
+        overflow: "hidden",
+        background: "#0D0D0D",
+      }}
     >
-      {/* Layout — headline left, focal point center-right */}
-      <div className="relative z-10 h-full max-w-[1400px] mx-auto px-8 md:px-16 flex flex-col md:flex-row md:items-center">
+      {/* Corner vignette — deepens edges so headline reads on any display */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          pointerEvents: "none",
+          background:
+            "radial-gradient(120% 120% at 62% 50%, transparent 40%, rgba(0,0,0,0.55) 100%)",
+          zIndex: 1,
+        }}
+      />
 
-        {/* Left column: headline + CTAs (desktop) */}
-        <div className="md:w-[46%] shrink-0 flex flex-col gap-7 pt-[16vh] md:pt-0">
-          <div className="flex flex-col gap-5">
-            <span className="text-foundry-ochre text-[11px] tracking-[0.22em] uppercase">
-              Cape Town · Product Studio
-            </span>
-            <h1 className="text-[2.5rem] sm:text-[3rem] md:text-[3.75rem] lg:text-[4.75rem] font-medium tracking-[-0.025em] text-white leading-[1.05] max-w-[500px]">
-              We help founders and agencies ship the right thing, faster.
-            </h1>
-            <p className="text-white/50 text-base md:text-lg leading-relaxed max-w-[360px]">
-              Product consulting. Websites. Referral systems.
-            </p>
-          </div>
+      {/* Forge stage — self-positions at right:6vw, top:50% */}
+      <ForgeFocalPoint />
 
-          {/* CTAs — desktop only at this position */}
-          <div className="hidden md:flex gap-3">
-            <Link
-              href="/book"
-              className="inline-flex items-center justify-center bg-foundry-ochre text-white font-medium px-6 py-4 rounded-[6px] hover:bg-foundry-ochre-hover transition-colors duration-200"
-            >
-              Book a call →
-            </Link>
-            <Link
-              href="/work"
-              className="inline-flex items-center justify-center border border-white/20 text-white/65 font-medium px-6 py-4 rounded-[6px] hover:border-white/40 hover:text-white/90 transition-colors duration-200"
-            >
-              See our work
-            </Link>
-          </div>
-        </div>
+      {/* Headline + CTAs — absolutely anchored left */}
+      <div
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "7vw",
+          transform: "translateY(-50%)",
+          zIndex: 4,
+          maxWidth: "560px",
+        }}
+      >
+        <h1
+          style={{
+            margin: 0,
+            color: "#F4F2EE",
+            fontWeight: 500,
+            fontSize: "clamp(40px, 5.6vw, 76px)",
+            lineHeight: 1.04,
+            letterSpacing: "-0.02em",
+            textWrap: "balance",
+          } as React.CSSProperties}
+        >
+          Every business has a next level. We help you reach it.
+        </h1>
 
-        {/* Center-right: forge focal point
-            Absolute on desktop (floats in darkness with negative space).
-            Inline flow on mobile (sits between headline and CTAs). */}
-        <div className="
-          flex items-center justify-center my-8
-          md:my-0 md:absolute md:inset-y-0
-          md:right-[-2%] md:w-[58%]
-          md:flex md:items-center md:justify-center
-        ">
-          <ForgeFocalPoint />
-        </div>
+        <p
+          style={{
+            margin: "24px 0 0",
+            color: "rgba(244,242,238,0.55)",
+            fontSize: "clamp(16px, 1.25vw, 20px)",
+            lineHeight: 1.55,
+            maxWidth: "440px",
+          }}
+        >
+          More credibility. More customers. More conversion. Foundry is the
+          difference between a business that exists and one that grows.
+        </p>
 
-        {/* CTAs — mobile only, below focal point */}
-        <div className="md:hidden flex gap-3 flex-wrap pb-10">
+        <div style={{ display: "flex", gap: "16px", marginTop: "36px", alignItems: "center", flexWrap: "wrap" }}>
           <Link
             href="/book"
-            className="inline-flex items-center justify-center bg-foundry-ochre text-white font-medium px-6 py-4 rounded-[6px] hover:bg-foundry-ochre-hover transition-colors duration-200"
+            className="inline-flex items-center justify-center bg-foundry-ochre text-white font-semibold hover:bg-foundry-ochre-hover transition-colors duration-200"
+            style={{
+              height: "52px",
+              padding: "0 28px",
+              borderRadius: "8px",
+              fontSize: "16px",
+              letterSpacing: "-0.01em",
+              textDecoration: "none",
+            }}
           >
-            Book a call →
+            Book a call
           </Link>
           <Link
             href="/work"
-            className="inline-flex items-center justify-center border border-white/20 text-white/65 font-medium px-6 py-4 rounded-[6px] hover:border-white/40 hover:text-white/90 transition-colors duration-200"
+            className="inline-flex items-center justify-center transition-colors duration-200"
+            style={{
+              height: "52px",
+              padding: "0 28px",
+              borderRadius: "8px",
+              background: "transparent",
+              color: "#E8E5DF",
+              fontSize: "16px",
+              fontWeight: 500,
+              textDecoration: "none",
+              letterSpacing: "-0.01em",
+              border: "1px solid rgba(232,229,223,0.22)",
+            }}
           >
             See our work
           </Link>
         </div>
       </div>
 
-      {/* Far-right editorial label — desktop XL only */}
-      <div className="hidden xl:flex absolute right-6 top-1/2 -translate-y-1/2 flex-col items-center">
-        <span className="text-white/18 text-[10px] tracking-[0.28em] uppercase [writing-mode:vertical-rl] rotate-180">
-          Built by one person
-        </span>
-      </div>
-
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 pointer-events-none select-none">
-        <span className="text-white/20 text-[10px] tracking-[0.25em] uppercase">
+      <div
+        style={{
+          position: "absolute",
+          bottom: "32px",
+          left: "50%",
+          transform: "translateX(-50%)",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: "12px",
+          pointerEvents: "none",
+          userSelect: "none",
+          zIndex: 4,
+        }}
+      >
+        <span
+          style={{
+            color: "rgba(255,255,255,0.2)",
+            fontSize: "10px",
+            letterSpacing: "0.25em",
+            textTransform: "uppercase",
+          }}
+        >
           Scroll
         </span>
-        <div className="w-px h-8 bg-gradient-to-b from-white/15 to-transparent" />
+        <div
+          style={{
+            width: "1px",
+            height: "32px",
+            background: "linear-gradient(to bottom, rgba(255,255,255,0.15), transparent)",
+          }}
+        />
       </div>
     </section>
   );

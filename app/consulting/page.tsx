@@ -1,16 +1,13 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import EmberFissureHero from "@/components/EmberFissureHero";
 
 export const metadata: Metadata = {
   title: "Consulting — Foundry",
   description:
-    "Fractional Product Owner and Business Analyst for founders and dev agencies.",
+    "Build the right thing and grow faster — fractional product leadership for founders and agencies.",
 };
-
-const HERO_IMG =
-  "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=2000&q=80";
 
 const engagements = [
   {
@@ -33,28 +30,7 @@ const engagements = [
 export default function ConsultingPage() {
   return (
     <main>
-      {/* Hero — photographic, full-bleed */}
-      <section className="relative h-[70vh] min-h-[480px] bg-foundry-ink overflow-hidden">
-        <Image
-          src={HERO_IMG}
-          alt="Product consulting workspace"
-          fill
-          className="object-cover object-top opacity-50"
-          priority
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-foundry-ink via-foundry-ink/40 to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 px-8 md:px-16 pb-14 md:pb-20">
-          <div className="max-w-[1200px] mx-auto">
-            <h1 className="text-[2.75rem] md:text-[4rem] lg:text-[5rem] font-medium tracking-[-0.025em] text-white leading-[1.05] max-w-[800px] mb-5">
-              Fractional Product Owner &amp; Business Analyst.
-            </h1>
-            <p className="text-white/65 text-xl leading-relaxed max-w-[540px]">
-              I help founders and agencies ship the right thing, faster.
-            </p>
-          </div>
-        </div>
-      </section>
+      <EmberFissureHero />
 
       {/* Background */}
       <section className="px-8 md:px-16 py-[4rem] md:py-[6rem] bg-foundry-cream">
@@ -94,7 +70,8 @@ export default function ConsultingPage() {
                   roadmap — that&rsquo;s the gap I fill.
                 </p>
                 <p className="text-foundry-ink text-sm font-medium">
-                  Turn a chaotic backlog into a roadmap that actually ships.
+                  Turn a chaotic backlog into a roadmap that ships — and a
+                  product that grows.
                 </p>
               </div>
             </ScrollReveal>
@@ -109,7 +86,8 @@ export default function ConsultingPage() {
                   capacity for client projects.
                 </p>
                 <p className="text-foundry-ink text-sm font-medium">
-                  Senior delivery without the senior-market rate.
+                  Drop-in product capacity that makes your team ship the right
+                  thing the first time.
                 </p>
               </div>
             </ScrollReveal>
@@ -147,7 +125,7 @@ export default function ConsultingPage() {
         <div className="max-w-[1200px] mx-auto">
           <ScrollReveal>
             <h2 className="text-[2.5rem] font-medium tracking-tight text-foundry-ink mb-8">
-              Let&rsquo;s talk about what you&rsquo;re building.
+              Let&rsquo;s grow your business.
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={100}>
