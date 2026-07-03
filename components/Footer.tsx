@@ -34,9 +34,11 @@ export default function Footer() {
             <Link href="/book" className="text-foundry-stone text-sm hover:text-foundry-ink transition-colors duration-300">
               Book
             </Link>
+            {/* Referral programme — hidden pending business decision
             <Link href="/refer" className="text-foundry-stone text-sm hover:text-foundry-ink transition-colors duration-300">
               Refer & earn
             </Link>
+            */}
           </div>
         </div>
       </div>
