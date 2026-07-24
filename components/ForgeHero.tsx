@@ -83,24 +83,6 @@ export default function ForgeHero() {
           >
             Book a call
           </Link>
-          <Link
-            href="/work"
-            className="inline-flex items-center justify-center transition-colors duration-200"
-            style={{
-              height: "52px",
-              padding: "0 28px",
-              borderRadius: "8px",
-              background: "transparent",
-              color: "#E8E5DF",
-              fontSize: "16px",
-              fontWeight: 500,
-              textDecoration: "none",
-              letterSpacing: "-0.01em",
-              border: "1px solid rgba(232,229,223,0.22)",
-            }}
-          >
-            See our work
-          </Link>
         </div>
       </div>
 
