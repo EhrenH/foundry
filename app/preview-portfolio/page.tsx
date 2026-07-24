@@ -69,7 +69,7 @@ const CAL_LINK =
 export default function PortfolioLandingPage() {
   const [activeType, setActiveType] = useState('all');
   const [heroIndex, setHeroIndex] = useState(0);
-  const intervalRef = useRef(null);
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const filteredImages =
     activeType === 'all'
@@ -79,11 +79,13 @@ export default function PortfolioLandingPage() {
   // Auto-advance hero carousel through the currently filtered pool
   useEffect(() => {
     setHeroIndex(0);
-    clearInterval(intervalRef.current);
+    if (intervalRef.current !== null) clearInterval(intervalRef.current);
     intervalRef.current = setInterval(() => {
       setHeroIndex((i) => (i + 1) % Math.max(filteredImages.length, 1));
     }, 4200);
-    return () => clearInterval(intervalRef.current);
+    return () => {
+      if (intervalRef.current !== null) clearInterval(intervalRef.current);
+    };
   }, [activeType]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const currentImage = filteredImages[heroIndex] || PORTFOLIO_IMAGES[0];
