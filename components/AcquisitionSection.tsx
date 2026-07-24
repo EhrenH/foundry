@@ -119,20 +119,13 @@ export default function AcquisitionSection() {
             ))}
           </div>
 
-          <div style={{ border: "1px solid rgba(42,33,20,0.18)", borderRadius: "8px", padding: "1.25rem 1.5rem", display: "flex", flexDirection: "column", gap: "1rem" }}>
-            <p style={{ color: "#6B6B6B", fontSize: "0.875rem" }}>
-              From{" "}
-              <strong style={{ color: "#1A150D", fontWeight: 500 }}>R499/month.</strong>{" "}
-              Setup included.
-            </p>
-            <Link
-              href="/book"
-              className="hover:bg-foundry-ochre-hover transition-colors duration-200"
-              style={{ display: "inline-flex", alignItems: "center", background: "#C9A96E", color: "#fff", fontWeight: 500, padding: "0.55rem 1.1rem", borderRadius: "6px", fontSize: "0.875rem", textDecoration: "none", alignSelf: "flex-start" }}
-            >
-              Book a referral system call →
-            </Link>
-          </div>
+          <Link
+            href="/book"
+            className="hover:bg-foundry-ochre-hover transition-colors duration-200"
+            style={{ display: "inline-flex", alignItems: "center", background: "#C9A96E", color: "#fff", fontWeight: 500, padding: "0.55rem 1.1rem", borderRadius: "6px", fontSize: "0.875rem", textDecoration: "none", alignSelf: "flex-start" }}
+          >
+            Book a call →
+          </Link>
         </div>
 
       </div>

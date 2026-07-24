@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { CONTACT_EMAIL } from "@/lib/constants";
 
 export default function Footer() {
   return (
@@ -15,12 +14,12 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col gap-3 md:items-end">
-          <a
-            href={`mailto:${CONTACT_EMAIL}`}
+          <Link
+            href="/contact"
             className="text-foundry-ink text-sm hover:text-foundry-stone transition-colors duration-300"
           >
-            {CONTACT_EMAIL}
-          </a>
+            Contact us
+          </Link>
           <div className="flex gap-6">
             <Link href="/services" className="text-foundry-stone text-sm hover:text-foundry-ink transition-colors duration-300">
               Expertise

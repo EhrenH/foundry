@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { CONTACT_EMAIL } from "@/lib/constants";
+import Link from "next/link";
 import CalEmbed from "@/components/CalEmbed";
 
 export const metadata: Metadata = {
@@ -37,15 +37,15 @@ export default function BookPage() {
           ) : (
             <div className="max-w-[480px]">
               <p className="text-foundry-stone text-base leading-relaxed mb-6">
-                Our live calendar is being set up. In the meantime, send us an
-                email and we&rsquo;ll book a time directly.
+                Our live calendar is being set up. In the meantime, send us a
+                message and we&rsquo;ll book a time directly.
               </p>
-              <a
-                href={`mailto:${CONTACT_EMAIL}?subject=Book a call&body=Hi, I'd like to book a 30-minute call with Foundry.`}
+              <Link
+                href="/contact"
                 className="inline-flex items-center justify-center bg-foundry-ink text-white font-medium px-6 py-3.5 rounded-[6px] hover:opacity-80 transition-opacity duration-200"
               >
-                Email to book →
-              </a>
+                Contact us →
+              </Link>
             </div>
           )}
         </div>
@@ -55,13 +55,13 @@ export default function BookPage() {
       <section className="px-8 md:px-16 py-[3rem] bg-foundry-white border-t border-foundry-mist">
         <div className="max-w-[1200px] mx-auto">
           <p className="text-foundry-stone text-sm">
-            Prefer email?{" "}
-            <a
-              href={`mailto:${CONTACT_EMAIL}`}
+            Prefer to message us?{" "}
+            <Link
+              href="/contact"
               className="text-foundry-ink underline underline-offset-4 decoration-foundry-mist hover:decoration-foundry-ink transition-colors duration-200"
             >
-              {CONTACT_EMAIL}
-            </a>
+              Contact us →
+            </Link>
           </p>
         </div>
       </section>

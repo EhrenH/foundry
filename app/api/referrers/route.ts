@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { supabaseAdmin } from "@/lib/supabase";
 import { generateReferralCode } from "@/lib/referral";
-import { SITE_URL, CONTACT_EMAIL } from "@/lib/constants";
+import { SITE_URL } from "@/lib/constants";
 import { Resend } from "resend";
 
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
@@ -96,7 +96,7 @@ export async function POST(req: NextRequest) {
         </ul>
         <p>Track your referrals and rewards at any time: <a href="${dashboardUrl}">${dashboardUrl}</a></p>
         <p>— Foundry</p>
-        <p><small>Questions? ${CONTACT_EMAIL}</small></p>
+        <p><small>Questions? <a href="${SITE_URL}/contact">Contact us</a></small></p>
       `,
     }).catch(() => null);
   }

@@ -280,12 +280,12 @@ export default function BookingFlow() {
             <p className="text-foundry-stone text-sm leading-relaxed">
               Live calendar coming soon. In the meantime,{" "}
               <a
-                href="mailto:hello@foundry.co.za"
+                href="/contact"
                 className="text-foundry-ink underline underline-offset-4 decoration-foundry-mist hover:decoration-foundry-ink transition-colors duration-200"
               >
-                email hello@foundry.co.za
+                contact us
               </a>{" "}
-              to book a call and we&rsquo;ll get back to you within a few hours.
+              and we&rsquo;ll get back to you within a few hours.
             </p>
           </div>
         ) : (

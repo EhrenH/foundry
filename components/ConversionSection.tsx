@@ -119,7 +119,7 @@ export default function ConversionSection() {
             className="hover:bg-foundry-ochre-hover transition-colors duration-200"
             style={{ display: "inline-flex", alignItems: "center", background: "#C9A96E", color: "#fff", fontWeight: 500, padding: "0.6rem 1.25rem", borderRadius: "6px", fontSize: "0.875rem", textDecoration: "none", alignSelf: "flex-start" }}
           >
-            Book a consulting call →
+            Book a call →
           </Link>
         </div>
 

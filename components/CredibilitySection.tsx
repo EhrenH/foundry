@@ -89,22 +89,13 @@ export default function CredibilitySection() {
               </div>
             ))}
           </div>
-          <div style={{ border: "1px solid #E8E8E8", borderRadius: "8px", padding: "1.25rem 1.5rem", display: "flex", flexDirection: "column", gap: "0.875rem" }}>
-            <p style={{ color: "#6B6B6B", fontSize: "0.875rem" }}>
-              From{" "}
-              <strong style={{ color: "#1A1A1A", fontWeight: 500 }}>R6,500 build</strong>
-              {" "}+{" "}
-              <strong style={{ color: "#1A1A1A", fontWeight: 500 }}>R450/month</strong>{" "}
-              hosting and support.
-            </p>
-            <Link
-              href="/book"
-              className="hover:bg-foundry-ochre-hover transition-colors duration-200"
-              style={{ display: "inline-flex", alignItems: "center", background: "#C9A96E", color: "#fff", fontWeight: 500, padding: "0.55rem 1.1rem", borderRadius: "6px", fontSize: "0.875rem", textDecoration: "none", alignSelf: "flex-start" }}
-            >
-              Book a website project →
-            </Link>
-          </div>
+          <Link
+            href="/book"
+            className="hover:bg-foundry-ochre-hover transition-colors duration-200"
+            style={{ display: "inline-flex", alignItems: "center", background: "#C9A96E", color: "#fff", fontWeight: 500, padding: "0.55rem 1.1rem", borderRadius: "6px", fontSize: "0.875rem", textDecoration: "none", alignSelf: "flex-start" }}
+          >
+            Book a call →
+          </Link>
         </div>
 
         {/* ── Prism focal point — RIGHT ───────────────────── */}

@@ -6,5 +6,3 @@ export const REWARD_AMOUNTS = {
 } as const;
 
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://foundry.co.za";
-
-export const CONTACT_EMAIL = "hello@foundry.co.za";
