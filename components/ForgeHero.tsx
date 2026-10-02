@@ -69,9 +69,9 @@ export default function ForgeHero() {
         </p>
         <p
           style={{
-            margin: "12px 0 0",
-            color: "rgba(244,242,238,0.4)",
-            fontSize: "clamp(15px, 1.1vw, 18px)",
+            margin: 0,
+            color: "rgba(244,242,238,0.55)",
+            fontSize: "clamp(16px, 1.25vw, 20px)",
             lineHeight: 1.55,
             maxWidth: "440px",
           }}
