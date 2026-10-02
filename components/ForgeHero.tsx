@@ -62,10 +62,21 @@ export default function ForgeHero() {
             fontSize: "clamp(16px, 1.25vw, 20px)",
             lineHeight: 1.55,
             maxWidth: "440px",
+            whiteSpace: "nowrap",
           }}
         >
-          More credibility. More customers. More conversion. Foundry is the
-          difference between a business that exists and one that grows.
+          More credibility. More customers. More conversion.
+        </p>
+        <p
+          style={{
+            margin: "12px 0 0",
+            color: "rgba(244,242,238,0.4)",
+            fontSize: "clamp(15px, 1.1vw, 18px)",
+            lineHeight: 1.55,
+            maxWidth: "440px",
+          }}
+        >
+          Foundry is the difference between a business that exists and one that grows.
         </p>
 
         <div style={{ display: "flex", gap: "16px", marginTop: "36px", alignItems: "center", flexWrap: "wrap" }}>
