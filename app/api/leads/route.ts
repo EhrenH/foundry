@@ -20,15 +20,18 @@ Name: ${lead.name}
 Email: ${lead.email}${lead.phone ? `\nPhone: ${lead.phone}` : ""}${lead.business_name ? `\nBusiness: ${lead.business_name}` : ""}${lead.message ? `\n\nMessage:\n${lead.message}` : ""}`;
 
   try {
-    await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+    const res = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         chat_id: chatId,
         text,
-        parse_mode: "HTML",
       }),
     });
+    if (!res.ok) {
+      const body = await res.text();
+      console.error("Telegram notification failed:", res.status, body);
+    }
   } catch (err) {
     console.error("Telegram notification failed:", err);
   }
@@ -82,8 +85,7 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  // Send Telegram notification (non-blocking)
-  sendTelegramNotification({
+  await sendTelegramNotification({
     name: leadData.name,
     email: leadData.email,
     phone: leadData.phone || undefined,
