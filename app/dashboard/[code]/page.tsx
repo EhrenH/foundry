@@ -5,7 +5,7 @@ import ReferralDashboard from "@/components/ReferralDashboard";
 
 type Props = { params: Promise<{ code: string }> };
 
-export const metadata: Metadata = { title: "Dashboard — Foundry" };
+export const metadata: Metadata = { title: "Dashboard | Foundry" };
 export const dynamic = "force-dynamic";
 
 export default async function DashboardPage({ params }: Props) {
@@ -15,7 +15,7 @@ export default async function DashboardPage({ params }: Props) {
     return (
       <main className="px-8 md:px-16 py-[5rem] bg-foundry-white">
         <div className="max-w-[1200px] mx-auto">
-          <p className="text-foundry-stone">Dashboard not available — Supabase is not configured.</p>
+          <p className="text-foundry-stone">Dashboard not available. Supabase is not configured.</p>
         </div>
       </main>
     );

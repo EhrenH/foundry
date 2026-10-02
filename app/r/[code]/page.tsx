@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     .maybeSingle();
   return {
     title: data ? `${data.name} recommends Foundry` : "Foundry",
-    description: "Websites, referral systems, and product consulting for businesses in South Africa.",
+    description: "Websites, referral systems and product consulting for businesses in South Africa.",
   };
 }
 
@@ -53,7 +53,7 @@ export default async function ReferralLandingPage({ params }: Props) {
             {referrer.name.split(" ")[0]} thinks Foundry can help your business grow.
           </h1>
           <p className="text-white/55 text-xl leading-relaxed max-w-[560px]">
-            Websites, referral systems, and product consulting for businesses in South Africa.
+            Websites, referral systems and product consulting for businesses in South Africa.
           </p>
         </div>
       </section>
@@ -98,7 +98,7 @@ export default async function ReferralLandingPage({ params }: Props) {
             href={`/book?ref=${code}`}
             className="text-foundry-ink text-sm font-medium hover:text-foundry-stone transition-colors duration-200"
           >
-            Book a call directly →
+            Book a call directly
           </Link>
         </div>
       </section>

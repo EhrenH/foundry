@@ -31,7 +31,7 @@ export default function ReferralForm({ referrer_code }: { referrer_code: string 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!name.trim() || !email.trim() || !interest) {
-      setError("Please fill in your name, email, and what you're looking for.");
+      setError("Please fill in your name, email and what you're looking for.");
       return;
     }
     setError("");
@@ -128,7 +128,7 @@ export default function ReferralForm({ referrer_code }: { referrer_code: string 
           fontFamily: "inherit", transition: "background 0.15s ease", alignSelf: "flex-start",
         }}
       >
-        {loading ? "Sending..." : "Get in touch →"}
+        {loading ? "Sending..." : "Get in touch"}
       </button>
     </form>
   );

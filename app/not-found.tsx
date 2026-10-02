@@ -18,10 +18,10 @@ export default function NotFound() {
             href="/"
             className="bg-foundry-ink text-white text-sm font-medium px-5 py-3 rounded-[6px] hover:opacity-80 transition-opacity duration-200"
           >
-            Back to home →
+            Back to home
           </Link>
           <Link
-            href="/services"
+            href="/expertise"
             className="text-foundry-ink text-sm font-medium hover:text-foundry-stone transition-colors duration-200"
           >
             Explore Expertise

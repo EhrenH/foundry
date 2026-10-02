@@ -25,7 +25,7 @@ export default function Home() {
               href="/book"
               className="inline-flex items-center justify-center bg-foundry-ochre text-white font-medium px-6 py-4 rounded-[6px] hover:bg-foundry-ochre-hover transition-colors duration-200"
             >
-              Book a call →
+              Book a call
             </Link>
           </ScrollReveal>
         </div>

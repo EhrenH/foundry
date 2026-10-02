@@ -82,7 +82,7 @@ export default function ReferrerSignupForm() {
           fontFamily: "inherit", transition: "background 0.15s ease", alignSelf: "flex-start",
         }}
       >
-        {loading ? "Creating your link..." : "Get my referral link →"}
+        {loading ? "Creating your link..." : "Get my referral link"}
       </button>
     </form>
   );

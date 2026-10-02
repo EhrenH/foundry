@@ -9,11 +9,11 @@ const EASE = 0.06;
 const engagements = [
   {
     title: "Fractional ongoing",
-    description: "1–3 days a week embedded with your team. Best for founders who need consistent product leadership.",
+    description: "1-3 days a week embedded with your team. Best for founders who need consistent product leadership.",
   },
   {
     title: "Project sprint",
-    description: "4–8 week engagements with defined deliverables. Best for agencies bringing me onto specific client work.",
+    description: "4-8 week engagements with defined deliverables. Best for agencies bringing me onto specific client work.",
   },
   {
     title: "Advisory",
@@ -74,7 +74,7 @@ export default function ConversionSection() {
         {/* ── Content — LEFT ─────────────────────────────────── */}
         <div className="px-8 md:pl-16 md:pr-12 py-16 md:py-24 flex flex-col justify-center">
           <p style={{ color: "#C9A96E", fontSize: "11px", fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", marginBottom: "1rem" }}>
-            03 — Consulting
+            03 | Consulting
           </p>
           <h2 style={{ fontSize: "clamp(2rem, 3vw, 3.25rem)", fontWeight: 500, letterSpacing: "-0.025em", color: "#F4F2EE", lineHeight: 1.05, margin: "0 0 1.1rem" }}>
             Conversion.
@@ -88,7 +88,7 @@ export default function ConversionSection() {
             <div style={{ border: "1px solid rgba(255,255,255,0.1)", borderRadius: "6px", padding: "1.1rem" }}>
               <p style={{ color: "#F4F2EE", fontSize: "0.875rem", fontWeight: 500, marginBottom: "0.5rem" }}>For founders</p>
               <p style={{ color: "rgba(244,242,238,0.45)", fontSize: "0.8rem", lineHeight: 1.65 }}>
-                Messy backlog, vague specs, no one owning the roadmap — that&rsquo;s the gap I fill.
+                Messy backlog, vague specs, no one owning the roadmap: that&rsquo;s the gap I fill.
               </p>
             </div>
             <div style={{ border: "1px solid rgba(255,255,255,0.1)", borderRadius: "6px", padding: "1.1rem" }}>
@@ -105,10 +105,10 @@ export default function ConversionSection() {
           <div style={{ display: "flex", flexDirection: "column", gap: "0.875rem", marginBottom: "2rem" }}>
             {engagements.map(item => (
               <div key={item.title} style={{ display: "flex", gap: "0.75rem", alignItems: "flex-start" }}>
-                <span style={{ color: "#C9A96E", flexShrink: 0, marginTop: "2px" }}>—</span>
-                <div>
+                <span style={{ color: "#B8860B", flexShrink: 0, marginTop: "6px", width: "6px", height: "6px", borderRadius: "50%", background: "#B8860B" }}></span>
+                <div style={{ display: "flex", flexDirection: "column", gap: "0.25rem" }}>
                   <span style={{ color: "#F4F2EE", fontSize: "0.875rem", fontWeight: 500 }}>{item.title}</span>
-                  <span style={{ color: "rgba(244,242,238,0.45)", fontSize: "0.875rem" }}> — {item.description}</span>
+                  <span style={{ color: "rgba(244,242,238,0.45)", fontSize: "0.875rem" }}>{item.description}</span>
                 </div>
               </div>
             ))}
@@ -119,7 +119,7 @@ export default function ConversionSection() {
             className="hover:bg-foundry-ochre-hover transition-colors duration-200"
             style={{ display: "inline-flex", alignItems: "center", background: "#C9A96E", color: "#fff", fontWeight: 500, padding: "0.6rem 1.25rem", borderRadius: "6px", fontSize: "0.875rem", textDecoration: "none", alignSelf: "flex-start" }}
           >
-            Book a call →
+            Book a call
           </Link>
         </div>
 

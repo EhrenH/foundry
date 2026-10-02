@@ -14,7 +14,7 @@ export default function BookPage() {
   return (
     <main>
       {/* Page intro */}
-      <section className="px-8 md:px-16 py-[4rem] md:py-[6rem] bg-foundry-white">
+      <section className="px-8 md:px-16 py-[3rem] md:py-[4rem] bg-foundry-white">
         <div className="max-w-[1200px] mx-auto">
           <p className="text-foundry-ochre text-xs font-medium tracking-[0.2em] uppercase mb-5">
             Book a call
@@ -30,7 +30,7 @@ export default function BookPage() {
       </section>
 
       {/* Calendar */}
-      <section className="px-8 md:px-16 py-[4rem] md:py-[6rem] bg-foundry-cream">
+      <section className="px-8 md:px-16 py-[3rem] md:py-[4rem] bg-foundry-cream">
         <div className="max-w-[1200px] mx-auto">
           {CAL_LINK ? (
             <CalEmbed calLink={CAL_LINK} />
@@ -44,7 +44,7 @@ export default function BookPage() {
                 href="/contact"
                 className="inline-flex items-center justify-center bg-foundry-ink text-white font-medium px-6 py-3.5 rounded-[6px] hover:opacity-80 transition-opacity duration-200"
               >
-                Contact us →
+                Contact us
               </Link>
             </div>
           )}
@@ -60,7 +60,7 @@ export default function BookPage() {
               href="/contact"
               className="text-foundry-ink underline underline-offset-4 decoration-foundry-mist hover:decoration-foundry-ink transition-colors duration-200"
             >
-              Contact us →
+              Contact us
             </Link>
           </p>
         </div>

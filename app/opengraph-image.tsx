@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Foundry — Every business has a next level. We help you reach it.";
+export const alt = "Foundry: Every business has a next level. We help you reach it.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 

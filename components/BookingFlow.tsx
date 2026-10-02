@@ -482,7 +482,7 @@ export default function BookingFlow() {
             disabled={submitting}
             className="inline-flex items-center justify-center bg-foundry-ochre text-white font-medium px-6 py-3.5 rounded-[6px] hover:bg-foundry-ochre-hover active:bg-foundry-ochre-active transition-colors duration-200 disabled:opacity-60 self-start"
           >
-            {submitting ? "Booking..." : "Book call →"}
+            {submitting ? "Booking..." : "Book call"}
           </button>
         </form>
       )}

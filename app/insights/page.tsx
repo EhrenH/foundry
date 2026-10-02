@@ -3,9 +3,9 @@ import Link from "next/link";
 import { getAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Insights — Foundry",
+  title: "Insights | Foundry",
   description:
-    "Practical thinking on web credibility, referral growth, and product consulting — from Ehren at Foundry.",
+    "Practical thinking on web credibility, referral growth and product consulting from Ehren at Foundry.",
 };
 
 function formatDate(iso: string) {
@@ -26,7 +26,7 @@ export default function BlogPage() {
             Insights
           </p>
           <h1 className="text-[2.5rem] md:text-[3.5rem] font-medium tracking-[-0.025em] text-foundry-ink leading-[1.05] max-w-[640px]">
-            Thinking about growth, credibility, and product.
+            Thinking about growth, credibility and product.
           </h1>
         </div>
       </section>
@@ -35,7 +35,7 @@ export default function BlogPage() {
       <section className="px-8 md:px-16 py-[3rem] md:py-[5rem] bg-foundry-white">
         <div className="max-w-[1200px] mx-auto">
           {posts.length === 0 ? (
-            <p className="text-foundry-stone">No posts yet — check back soon.</p>
+            <p className="text-foundry-stone">No posts yet. Check back soon.</p>
           ) : (
             <div className="flex flex-col divide-y divide-foundry-mist">
               {posts.map(post => (
@@ -58,7 +58,7 @@ export default function BlogPage() {
                           <span style={{ marginLeft: "0.4em", fontSize: "0.8em", opacity: 0.5 }}>↗</span>
                         </a>
                       ) : (
-                        <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+                        <Link href={`/insights/${post.slug}`}>{post.title}</Link>
                       )}
                     </h2>
                     <p className="text-foundry-stone text-sm leading-relaxed max-w-[600px]">
@@ -66,10 +66,10 @@ export default function BlogPage() {
                     </p>
                     {!post.externalUrl && (
                       <Link
-                        href={`/blog/${post.slug}`}
+                        href={`/insights/${post.slug}`}
                         className="text-foundry-ink text-sm font-medium hover:text-foundry-stone transition-colors duration-200 self-start"
                       >
-                        Read →
+                        Read
                       </Link>
                     )}
                   </div>

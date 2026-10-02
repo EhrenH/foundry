@@ -5,17 +5,17 @@ const services = [
   {
     title: "Credibility.",
     description: "The digital impression your business deserves. A presence that earns trust.",
-    href: "/services#credibility",
+    href: "/expertise#credibility",
   },
   {
     title: "Acquisition.",
     description: "Turn loyal customers into your best marketers and reward them for it. Growth that pays itself forward.",
-    href: "/services#acquisition",
+    href: "/expertise#acquisition",
   },
   {
     title: "Conversion.",
     description: "Most just build even if it's the wrong things. We focus on converting traffic into revenue.",
-    href: "/services#conversion",
+    href: "/expertise#conversion",
   },
 ];
 
@@ -42,7 +42,7 @@ export default function ServicesGrid() {
                   href={service.href}
                   className="text-foundry-ink text-sm font-medium hover:text-foundry-stone transition-colors duration-200"
                 >
-                  Learn more →
+                  Learn more
                 </Link>
               </div>
             </ScrollReveal>

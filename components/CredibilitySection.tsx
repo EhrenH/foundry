@@ -11,7 +11,7 @@ const included = [
   "Hosted on fast, reliable infrastructure (Vercel + Cloudflare)",
   "Mobile-first, accessible, search-engine optimised",
   "WhatsApp integration for lead capture",
-  "Ongoing support, updates, and security",
+  "Ongoing support, updates and security",
 ];
 
 export default function CredibilitySection() {
@@ -72,7 +72,7 @@ export default function CredibilitySection() {
         {/* ── Content — LEFT ─────────────────────────────── */}
         <div className="px-8 md:pl-16 md:pr-12 py-16 md:py-20 flex flex-col justify-center">
           <p style={{ color: "#C9A96E", fontSize: "11px", fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", marginBottom: "1rem" }}>
-            01 — Web
+            01 | Web
           </p>
           <h2 style={{ fontSize: "clamp(2rem, 3vw, 3.25rem)", fontWeight: 500, letterSpacing: "-0.025em", color: "#1A1A1A", lineHeight: 1.05, margin: "0 0 1rem" }}>
             Credibility.
@@ -84,7 +84,7 @@ export default function CredibilitySection() {
           <div style={{ display: "flex", flexDirection: "column", gap: "0.6rem", marginBottom: "2rem" }}>
             {included.map(item => (
               <div key={item} style={{ display: "flex", gap: "0.75rem", alignItems: "flex-start" }}>
-                <span style={{ color: "#C9A96E", flexShrink: 0, marginTop: "2px" }}>—</span>
+                <span style={{ color: "#B8860B", flexShrink: 0, marginTop: "6px", width: "6px", height: "6px", borderRadius: "50%", background: "#B8860B" }}></span>
                 <span style={{ color: "#6B6B6B", fontSize: "0.875rem", lineHeight: 1.65 }}>{item}</span>
               </div>
             ))}
@@ -94,7 +94,7 @@ export default function CredibilitySection() {
             className="hover:bg-foundry-ochre-hover transition-colors duration-200"
             style={{ display: "inline-flex", alignItems: "center", background: "#C9A96E", color: "#fff", fontWeight: 500, padding: "0.55rem 1.1rem", borderRadius: "6px", fontSize: "0.875rem", textDecoration: "none", alignSelf: "flex-start" }}
           >
-            Book a call →
+            Book a call
           </Link>
         </div>
 

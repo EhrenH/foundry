@@ -21,10 +21,10 @@ export default function Footer() {
             Contact us
           </Link>
           <div className="flex gap-6">
-            <Link href="/services" className="text-foundry-stone text-sm hover:text-foundry-ink transition-colors duration-300">
+            <Link href="/expertise" className="text-foundry-stone text-sm hover:text-foundry-ink transition-colors duration-300">
               Expertise
             </Link>
-            <Link href="/blog" className="text-foundry-stone text-sm hover:text-foundry-ink transition-colors duration-300">
+            <Link href="/insights" className="text-foundry-stone text-sm hover:text-foundry-ink transition-colors duration-300">
               Insights
             </Link>
             <Link href="/about" className="text-foundry-stone text-sm hover:text-foundry-ink transition-colors duration-300">
@@ -44,7 +44,7 @@ export default function Footer() {
 
       <div className="max-w-[1200px] mx-auto mt-10 pt-6 border-t border-foundry-mist">
         <p className="text-foundry-stone text-xs">
-          © {new Date().getFullYear()} Foundry
+          © 2024 Foundry.
         </p>
       </div>
     </footer>

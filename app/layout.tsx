@@ -19,11 +19,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Foundry — Growth for ambitious businesses",
-    template: "%s — Foundry",
+    default: "Foundry | Growth for ambitious businesses",
+    template: "%s | Foundry",
   },
   description:
-    "Foundry builds the digital systems that grow your business: websites that earn trust, referral programmes that pay for themselves, and product consulting that makes sure you build the right thing.",
+    "Foundry builds the digital systems that grow your business: websites that earn trust, referral programmes that pay for themselves and product consulting that makes sure you build the right thing.",
   keywords: ["web design South Africa", "referral programme", "product consulting", "business growth"],
   authors: [{ name: "Foundry", url: SITE_URL }],
   creator: "Foundry",
@@ -32,23 +32,23 @@ export const metadata: Metadata = {
     locale: "en_ZA",
     url: SITE_URL,
     siteName: "Foundry",
-    title: "Foundry — Growth for ambitious businesses",
+    title: "Foundry | Growth for ambitious businesses",
     description:
-      "Websites, referral systems, and product consulting for businesses that want more.",
+      "Websites, referral systems and product consulting for businesses that want more.",
     images: [
       {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Foundry — Every business has a next level. We help you reach it.",
+        alt: "Foundry: Every business has a next level. We help you reach it.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Foundry — Growth for ambitious businesses",
+    title: "Foundry | Growth for ambitious businesses",
     description:
-      "Websites, referral systems, and product consulting for businesses that want more.",
+      "Websites, referral systems and product consulting for businesses that want more.",
     images: ["/opengraph-image"],
   },
   robots: {

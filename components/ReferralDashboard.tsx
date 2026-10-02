@@ -45,7 +45,7 @@ export default function ReferralDashboard({ name, referral_code, referrals, rewa
   }
 
   const waMessage = encodeURIComponent(
-    `Hi! I thought you might be interested in Foundry — they build websites, referral systems, and product consulting for businesses. Here's my link: ${referralUrl}`
+    `Hi! I thought you might be interested in Foundry. They build websites, referral systems and product consulting for businesses. Here's my link: ${referralUrl}`
   );
 
   return (

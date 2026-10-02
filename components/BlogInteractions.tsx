@@ -193,7 +193,7 @@ export default function BlogInteractions({ slug }: { slug: string }) {
               fontFamily: "inherit", transition: "background 0.15s ease",
             }}
           >
-            {submitting ? "Posting..." : "Post comment →"}
+            {submitting ? "Posting..." : "Post comment"}
           </button>
         </form>
       </div>

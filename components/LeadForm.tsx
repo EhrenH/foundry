@@ -161,7 +161,7 @@ export default function LeadForm() {
         disabled={loading}
         className="self-start rounded-[6px] bg-foundry-ochre px-6 py-3 text-[0.9rem] font-medium text-white hover:bg-foundry-ochre-hover transition-colors duration-200 disabled:bg-foundry-mist disabled:text-foundry-stone disabled:cursor-default"
       >
-        {loading ? "Sending..." : "Send message →"}
+        {loading ? "Sending..." : "Send message"}
       </button>
     </form>
   );

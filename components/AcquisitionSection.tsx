@@ -9,8 +9,8 @@ const EASE = 0.055;
 const included = [
   "Personal referral links for each of your customers",
   "Branded landing pages on your own website",
-  "WhatsApp-first sharing — your customers send links in one tap",
-  "Automated tracking, notifications, and reward management",
+  "WhatsApp-first sharing: your customers send links in one tap",
+  "Automated tracking, notifications and reward management",
   "Reporting dashboard with referral activity and revenue",
 ];
 
@@ -87,7 +87,7 @@ export default function AcquisitionSection() {
         {/* ── Content — RIGHT ────────────────────────────────── */}
         <div className="px-8 md:pl-12 md:pr-16 py-16 md:py-20 flex flex-col justify-center">
           <p style={{ color: "#C9A96E", fontSize: "11px", fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", marginBottom: "1rem" }}>
-            02 — Referral
+            02 | Referral
           </p>
           <h2 style={{ fontSize: "clamp(2rem, 3vw, 3.25rem)", fontWeight: 500, letterSpacing: "-0.025em", color: "#1A150D", lineHeight: 1.05, margin: "0 0 1.1rem" }}>
             Acquisition.
@@ -95,13 +95,13 @@ export default function AcquisitionSection() {
           <p style={{ color: "#6B6B6B", fontSize: "1.05rem", lineHeight: 1.7, marginBottom: "2rem" }}>
             The people who already trust you are your best source of new
             business. We build the system that turns them into a steady stream
-            of referrals — automatically.
+            of referrals. Automatically.
           </p>
 
           <div style={{ display: "flex", flexDirection: "column", gap: "0.625rem", marginBottom: "1.75rem" }}>
             {included.map(item => (
               <div key={item} style={{ display: "flex", gap: "0.75rem", alignItems: "flex-start" }}>
-                <span style={{ color: "#C9A96E", flexShrink: 0, marginTop: "2px" }}>—</span>
+                <span style={{ color: "#B8860B", flexShrink: 0, marginTop: "6px", width: "6px", height: "6px", borderRadius: "50%", background: "#B8860B" }}></span>
                 <span style={{ color: "#6B6B6B", fontSize: "0.875rem", lineHeight: 1.65 }}>{item}</span>
               </div>
             ))}
@@ -124,7 +124,7 @@ export default function AcquisitionSection() {
             className="hover:bg-foundry-ochre-hover transition-colors duration-200"
             style={{ display: "inline-flex", alignItems: "center", background: "#C9A96E", color: "#fff", fontWeight: 500, padding: "0.55rem 1.1rem", borderRadius: "6px", fontSize: "0.875rem", textDecoration: "none", alignSelf: "flex-start" }}
           >
-            Book a call →
+            Book a call
           </Link>
         </div>
 

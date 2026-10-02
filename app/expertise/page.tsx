@@ -4,9 +4,9 @@ import AcquisitionSection from "@/components/AcquisitionSection";
 import ConversionSection  from "@/components/ConversionSection";
 
 export const metadata: Metadata = {
-  title: "Expertise — Foundry",
+  title: "Expertise | Foundry",
   description:
-    "Credibility, acquisition, and conversion — three ways Foundry grows your business.",
+    "Credibility, acquisition and conversion: three ways Foundry grows your business.",
 };
 
 export default function ServicesPage() {
@@ -22,7 +22,7 @@ export default function ServicesPage() {
             For businesses that want more.
           </h1>
           <p className="text-white/55 text-xl leading-relaxed max-w-[560px]">
-            Credibility, acquisition, and conversion — the three levers that
+            Credibility, acquisition and conversion: the three levers that
             move a business forward. We build all three.
           </p>
         </div>

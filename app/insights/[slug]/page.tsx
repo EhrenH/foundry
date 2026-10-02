@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getPost(slug);
   if (!post) return {};
   return {
-    title:       `${post.title} — Foundry`,
+    title:       `${post.title} | Foundry`,
     description: post.excerpt,
     openGraph: {
       title:       post.title,
@@ -70,10 +70,10 @@ export default async function BlogPostPage({ params }: Props) {
         <div className="px-8 md:px-16 py-5 border-b border-foundry-mist bg-foundry-white">
           <div className="max-w-[760px] mx-auto">
             <Link
-              href="/blog"
+              href="/insights"
               className="text-foundry-stone text-sm hover:text-foundry-ink transition-colors duration-200"
             >
-              ← Insights
+              Insights
             </Link>
           </div>
         </div>
@@ -127,7 +127,7 @@ export default async function BlogPostPage({ params }: Props) {
               href="/book"
               className="inline-flex items-center bg-foundry-ochre text-white font-medium px-5 py-3 rounded-[6px] hover:bg-foundry-ochre-hover transition-colors duration-200 whitespace-nowrap text-sm"
             >
-              Book a call →
+              Book a call
             </Link>
           </div>
         </section>

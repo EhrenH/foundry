@@ -5,7 +5,7 @@ import AboutFocalPoint from "@/components/AboutFocalPoint";
 import ServicesGrid from "@/components/ServicesGrid";
 
 export const metadata: Metadata = {
-  title: "About — Foundry",
+  title: "About | Foundry",
   description: "Foundry is a Cape Town-based growth studio.",
 };
 
@@ -36,7 +36,7 @@ export default function AboutPage() {
             </p>
             <p className="text-foundry-stone text-base leading-relaxed">
               We&rsquo;ve spent years growing businesses and shaping products around the world.
-              One lesson held firm — growth isn&rsquo;t luck. It&rsquo;s deliberate.
+              One lesson held firm: growth isn&rsquo;t luck. It&rsquo;s deliberate.
               The businesses that grew earned trust. They built the right things.
               They turned their traffic into customers and their customers into advocates.
             </p>
@@ -62,7 +62,7 @@ export default function AboutPage() {
               href="/book"
               className="inline-flex items-center justify-center bg-foundry-ochre text-white font-medium px-6 py-4 rounded-[6px] hover:bg-foundry-ochre-hover transition-colors duration-200"
             >
-              Book a call →
+              Book a call
             </Link>
           </ScrollReveal>
         </div>

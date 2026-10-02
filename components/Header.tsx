@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 const navLinks = [
-  { href: "/services", label: "Expertise" },
-  { href: "/blog",     label: "Insights" },
-  { href: "/about",    label: "About" },
+  { href: "/expertise", label: "Expertise" },
+  { href: "/insights",  label: "Insights" },
+  { href: "/about",     label: "About" },
 ];
 
 export default function Header() {
@@ -32,7 +32,7 @@ export default function Header() {
         href="/book"
         className="bg-foundry-ochre text-white text-sm font-medium px-5 py-2.5 rounded-[6px] hover:bg-foundry-ochre-hover transition-colors duration-300"
       >
-        Book a call →
+        Book a call
       </Link>
     </header>
   );

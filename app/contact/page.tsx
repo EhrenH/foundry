@@ -30,7 +30,7 @@ export default function ContactPage() {
                 href="/book"
                 className="text-foundry-ink underline underline-offset-4 decoration-foundry-mist hover:decoration-foundry-ink transition-colors duration-200"
               >
-                Book a call →
+                Book a call
               </Link>
             </p>
           </div>

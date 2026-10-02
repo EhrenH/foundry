@@ -189,8 +189,8 @@ export default function PortfolioLandingPage() {
             campaigns &amp; partnerships
           </h2>
           <p style={styles.bookingSub}>
-            Agencies, photographers and brands — including advertising
-            enquiries — can check availability and get in touch directly
+            Agencies, photographers and brands (including advertising
+            enquiries) can check availability and get in touch directly
             below.
           </p>
         </div>
