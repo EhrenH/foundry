@@ -5,19 +5,11 @@ import { useState } from "react";
 const inputClass =
   "w-full rounded-[6px] border border-foundry-mist bg-white px-3.5 py-2.5 text-[0.9rem] text-foundry-ink outline-none focus:border-foundry-stone transition-colors";
 
-const interests = [
-  { value: "website", label: "Website" },
-  { value: "referral", label: "Referral system" },
-  { value: "consulting", label: "Product consulting" },
-  { value: "not_sure", label: "Not sure yet" },
-];
-
 export default function LeadForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [business, setBusiness] = useState("");
-  const [interest, setInterest] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
   const [done, setDone] = useState(false);
@@ -40,7 +32,6 @@ export default function LeadForm() {
           email: email.trim(),
           phone: phone.trim() || undefined,
           business_name: business.trim() || undefined,
-          interest: interest || undefined,
           message: message.trim() || undefined,
         }),
       });
@@ -125,25 +116,7 @@ export default function LeadForm() {
       </div>
 
       <div className="flex flex-col gap-1.5">
-        <label className="text-xs font-medium text-foundry-stone">
-          What are you looking for?
-        </label>
-        <select
-          className={`${inputClass} appearance-none cursor-pointer`}
-          value={interest}
-          onChange={(e) => setInterest(e.target.value)}
-        >
-          <option value="">Select one</option>
-          {interests.map((i) => (
-            <option key={i.value} value={i.value}>
-              {i.label}
-            </option>
-          ))}
-        </select>
-      </div>
-
-      <div className="flex flex-col gap-1.5">
-        <label className="text-xs font-medium text-foundry-stone">Message</label>
+        <label className="text-xs font-medium text-foundry-stone">What are you looking for?</label>
         <textarea
           className={`${inputClass} resize-y leading-relaxed`}
           rows={4}
